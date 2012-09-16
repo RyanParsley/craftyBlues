@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #{$container} {
+    @include grid(8);
+  }
+  #page {
+    @include clearfix;
+  }
+  [role=main] {
+    @include column(5, 0);
+    float: left;
+  }
+  .CTA {
+    display: inline-block;
+    @include column(3, last);
+    float: right;
+    text-decoration: none;
+  }
+  aside {
+    @include column(3, last);
+    float: left;
+  }
+}

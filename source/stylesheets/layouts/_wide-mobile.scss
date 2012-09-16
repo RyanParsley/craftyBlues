@@ -1,0 +1,21 @@
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #{$container} {
+    @include grid(5);
+  }
+
+  [role=main] {
+    @include column(5, last);
+  }
+
+  .CTA {
+    display: inline-block;
+    @include column(2, last);
+    float: right;
+    text-decoration: none;
+  }
+
+  aside {
+    @include column(5, last);
+  }
+
+}
