@@ -1,7 +1,7 @@
 ---
 title: Why does this exist?
 date: 2012-09-15 21:12 -04:00
-tags:
+tags: first
 ---
 
 I have recently become smitten with cigar box guitars (GBGs). I had been
