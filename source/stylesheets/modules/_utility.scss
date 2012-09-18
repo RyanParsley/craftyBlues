@@ -30,6 +30,19 @@
   }
 }
 
+@mixin clearfix(){
+  &:before, &:after{
+    content:'\0020';
+    display:block; 
+    overflow:hidden; 
+    visibility:hidden; 
+    width:0; 
+    height:0;
+  } 
+  &:after{clear:both;}
+  zoom:1;
+}
+
 @mixin selection-color($color: unquote("rgb(255,255,158)")) {
   ::selection {background: #{$color};}
   ::-moz-selection {background: #{$color};}
