@@ -45,7 +45,6 @@
       p{
         font-size:2em;
         margin-bottom:1em;
-        @include column(4, last);
         @include prepend-column(1);
       }
       .cta a{
@@ -53,7 +52,6 @@
         -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
         text-decoration: none; 
         @include clean-pill-button(#999, 72px);
-        @include column(5,last);
         @include prepend-column(.5);
         @include append-column(.5);
         @include pad-column(1);

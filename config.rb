@@ -34,6 +34,7 @@ require "./lib/lil_helpers"
 helpers LilHelpers
 
 set :md, :layout_engine => :haml
+
 activate :directory_indexes
 
 page "test.html", :layout => "layouts/test"
