@@ -4,26 +4,30 @@
 $primaryBGColor: white;
 $primaryColor: rgb(60, 60, 60);
 
-$secondaryBGColor: rgb(232, 232, 232);
+$secondaryBGColor: #CCEFFC;
 $secondaryColor: #999999;
 
-$buttonBGColor: #888888;
-$buttonColor: rgba(0, 0, 0, 0.5);
+$footerBGColor: #002C3C;
 
-$buttonBGColorActive: rgba(0, 0, 0, 0.3);
+
+$buttonBGColor: lighten($footerBGColor, 10%);
+$buttonColor: lighten($buttonBGColor, 20%);
+
+$buttonBGColorActive: lighten($footerBGColor, 20%);
 $buttonColorActive: #cccccc;
 
-$footerBGColor: #999999;
-
-$header-color:#111;
-$headerBGColor: rgba(0, 0, 0, 0.2);
+$header-color: lighten($footerBGColor, 30%);
+$headerBGColor: $footerBGColor;
 
 
 // Basic Typography Settings
+$base-font-family: $helvetica;
+
 $indented-paragraphs: true;
-$base-font-size: 14px;
-$base-line-height: 17px;
+$base-font-size: 16px;
+$base-line-height: 24px;
 $line-height: 24px;
+$text-color: $primaryColor;
 
 @include basic-typography(true);
 

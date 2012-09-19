@@ -37,6 +37,7 @@ html {
 body {
   background: $secondaryBGColor;
   color: $primaryColor;
+  @include base-font;
   // Stops Mobile Safari from auto-adjusting font-sizes
   -webkit-text-size-adjust: 100%;
   @if $show-grid-backgrounds{
@@ -59,9 +60,7 @@ body {
 header[role= banner] {
   background: $headerBGColor;
   .container{
-    padding-top: $line-height;
-    padding-bottom: $line-height;
-  }
+   }
 }
 
 body>footer {

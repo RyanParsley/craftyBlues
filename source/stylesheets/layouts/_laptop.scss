@@ -1,7 +1,6 @@
 @mixin laptop {
   #{$container} {
     @include grid(10);
-    background: rgba(0,0,0, .3);
     @include clearfix;
   }
   #Logo{
@@ -41,7 +40,6 @@
     .content{
       @include column(6, last);
       @include prepend-column(4, true);
-      background:rgba(0,0,0,.1);
       p{
         font-size:2em;
         margin-bottom:1em;
@@ -84,19 +82,16 @@
     @include column(2, first);
     @include prepend-column(1, true);
     float: left; 
-    background:rgba(0,0,0,.2);
   }
   .second {
     @include column(2);
     @include append-column(1);
     float: left; 
-    background:rgba(0,0,0,.2);
   }
   .third {
     @include column(3, last);
     @include append-column(1, true);
     float: left; 
-    background:rgba(0,0,0,.2);
   }
   .contactForm{
     clear:left;
