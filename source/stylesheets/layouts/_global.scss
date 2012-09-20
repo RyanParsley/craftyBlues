@@ -106,6 +106,26 @@ nav {
 aside {
   background: $primaryBGColor; 
 }
-
+.menu{
+  list-style:none;
+  margin:0;
+  padding:0;
+  li{
+    margin:0;
+    padding:0;
+  }
+}
+ul.gallery{
+  list-style:none;
+  margin:0;
+  padding:0;
+  li{
+    @include column(3.3);
+    float:left;
+    :nth-child(3n){
+      margin-right:0;
+    }
+  }
+}
 // Selection colors (easy to forget)
 @include selection-color(unquote("rgb(255,255,158)"));

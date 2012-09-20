@@ -25,6 +25,10 @@
     @include append-column(1);
     float: left;
   }
+  .gallery [role=main]{
+    @include column(10, first);
+    @include last();
+  }
   aside {
     @include column(3, last);
     float: left;

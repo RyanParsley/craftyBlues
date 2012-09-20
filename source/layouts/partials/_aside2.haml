@@ -1,12 +1,12 @@
 %aside
   %h2 Recent Articles
-  %ol
+  %ol.menu
     - blog.articles[0...10].each do |article|
       %li
         = link_to article.title, article.url
         %span= article.date.strftime('%b %e')
   %h2 Tags
-  %ol
+  %ol.menu
     - blog.tags.each do |tag, articles|
       %li 
         = link_to "#{tag} (#{articles.size})", tag_path(tag)        
