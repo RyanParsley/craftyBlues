@@ -20,7 +20,8 @@
   %body{:class => page_classes}
     = partial "layouts/partials/header"
     #page.container
-      %h1= title
+      %h1
+        Articles tagged '#{tagname}'
       %section{:role => "main"}
         = yield
         - if current_page.data.dl
