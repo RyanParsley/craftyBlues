@@ -1,3 +1,20 @@
 %footer
+  .container
+    .first
+      %h2 Recent Articles
+      %ol.menu
+        - blog.articles[0...10].each do |article|
+          %li
+            = link_to article.title, article.url
+            %span= article.date.strftime('%b %e')
+    .second
+      %h2 Topics
+      %ol.menu
+        - blog.tags.each do |tag, articles|
+          %li 
+            = link_to "#{tag} (#{articles.size})", tag_path(tag) 
+    .third
+      %h2
+        Some other block
   %nav.secondary
     = partial "layouts/partials/main_nav"

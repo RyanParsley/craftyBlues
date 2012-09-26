@@ -83,8 +83,8 @@
     }
   }
   .first {
-    @include column(2, first);
-    @include prepend-column(1, true);
+    @include column(3, first);
+    @include append-column(1);
     float: left; 
   }
   .second {
@@ -94,7 +94,6 @@
   }
   .third {
     @include column(3, last);
-    @include append-column(1, true);
     float: left; 
   }
   .contactForm{
