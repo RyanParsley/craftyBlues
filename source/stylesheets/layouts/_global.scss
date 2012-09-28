@@ -65,6 +65,10 @@ header[role= banner] {
 
 body>footer {
   background: $footerBGColor;
+  color: #999;
+  .first a{
+    color:#fff;
+  }
 }
 
 #page {
