@@ -12,15 +12,17 @@
     %link{:rel => "apple-touch-icon", :sizes => "72x72", :href => "images/apple-touch-icon-ipad.png"}
     %link{:rel => "apple-touch-icon", :sizes => "114x114", :href => "images/apple-touch-icon-iphone4.png"}
 
+    %link{:href => "http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Josefin+Sans:400,700,400italic", :rel => "stylesheet", :type => "text/css"}
+
     %title= page_title
 
     = stylesheet_link_tag("style.css")
     = yield_content :head
 
-  %body{:class => page_classes}
+  %body{:class => page_classes + asideClass?}
     = partial "layouts/partials/header"
     #page.container
-      %h1 
+      %h1
         Archive for
         - case page_type when 'day'
           = Date.new(year, month, day).strftime('%b %e %Y')
@@ -34,12 +36,14 @@
           = link_to 'Download', current_page.data.dl, :class=> "dl"
       = partial "layouts/partials/aside2"
     = partial "layouts/partials/footer"
-    
+
     = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"
+
     :javascript
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.8.0.min.js"><\/script>')
+
     = javascript_include_tag "site"
-    
+
     :javascript
       var _gaq=[['_setAccount','UA-34939270-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

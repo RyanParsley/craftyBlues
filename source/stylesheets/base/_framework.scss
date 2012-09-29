@@ -41,7 +41,8 @@ $column-padding: 10px !default;
 @mixin column($columns, $place: middle){
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
   width: ($column-width * $columns) + ($gutter-width * ($columns - 1));
-  padding: $column-padding;
+  padding-left: $column-padding;
+  padding-right: $column-padding;
   margin-top: $gutter-width;
   margin-bottom: $gutter-width;
   @if $place == last{

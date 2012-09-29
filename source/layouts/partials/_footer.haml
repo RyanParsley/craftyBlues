@@ -14,7 +14,8 @@
           %li 
             = link_to "#{tag} (#{articles.size})", tag_path(tag) 
     .third
-      %h2
-        Some other block
+      %h2 Featured
+      %ol.menu
+        %li= link_to "Why does this site exist", "/blog/2012/09/15/WhyDoesThisExist/"
   %nav.secondary
     = partial "layouts/partials/main_nav"

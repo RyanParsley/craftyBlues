@@ -7,7 +7,7 @@ $primaryColor: rgb(60, 60, 60);
 $secondaryBGColor: #CCEFFC;
 $secondaryColor: #999999;
 
-$footerBGColor: #002C3C;
+$footerBGColor: #6d6e71;
 
 
 $buttonBGColor: lighten($footerBGColor, 10%);
@@ -21,16 +21,13 @@ $headerBGColor: $footerBGColor;
 
 
 // Basic Typography Settings
-$base-font-family: $helvetica;
-
+$base-font-family: $josefin;
+$header-font-family: $goudy;
 $indented-paragraphs: true;
-$base-font-size: 16px;
-$base-line-height: 24px;
-$line-height: 24px;
+$base-font-size: 21px;
+$base-line-height: 32px;
+$line-height: 32px;
 $text-color: $primaryColor;
-
-@include basic-typography(true);
-
 
 // Grid stuff
 $grid-background-column-color: rgba(100, 100, 225, 0.25);

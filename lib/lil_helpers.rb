@@ -31,10 +31,18 @@ module LilHelpers
   def active?(part)
      "active" if (data.page.selected == part) or Regexp.new(part).match(request.path)
   end
-  
+
   def aside?
     if data.page.aside
       partial "layouts/partials/#{current_page.data.aside}"
     end
+  end
+  def asideClass?
+    if data.page.aside
+      asideClass = " hasAside"
+    else
+      asideClass = " noAside"
+    end
+    asideClass
   end
 end

@@ -4,30 +4,36 @@
     @include clearfix;
   }
   #Logo{
-    @include column(3, first);
+    @include column(4, first);
     float:left;
+    padding-top:.6em;
     img{
       max-width:100%;
+      float:left;
+      margin-right:24px;
     }
   }
   header[role= banner] {
     nav {
-      @include column(7,last);
+      @include column(6,last);
       float:left;
       text-align:right;
     }
   }
   nav.secondary ul{
   }
-  [role=main] {
-    @include column(6, first);
-    border: solid 1px $primaryColor;
-    @include append-column(1);
-    float: left;
-  }
-  .gallery [role=main]{
+  [role=main]{
     @include column(10, first);
     @include last();
+  }
+  .container>h1{
+    @include column(10,first);
+    @include last();
+  }
+  .hasAside [role=main] {
+    @include column(6, first);
+    @include append-column(1);
+    float: left;
   }
   aside {
     @include column(3, last);

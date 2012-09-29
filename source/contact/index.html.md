@@ -1,5 +1,4 @@
 ---
-aside: aside
 title: Contact me
 ---
 I'd love to hear from you. Send me an

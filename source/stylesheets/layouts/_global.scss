@@ -4,7 +4,14 @@
 }
 
 $font-family: verdana, sans-serif !default;
-
+#Logo{
+  padding-top:.5em;
+  display:block;
+  font-size:2em;
+  line-height:2;
+  color:#fff;
+  text-decoration:none;
+}
 img, embed, object, video{
   max-width:100%;
 }
@@ -35,7 +42,7 @@ html {
   background: $footerBGColor; }
 
 body {
-  background: $secondaryBGColor;
+  background: $primaryBGColor;
   color: $primaryColor;
   @include base-font;
   // Stops Mobile Safari from auto-adjusting font-sizes
@@ -57,6 +64,12 @@ body {
   }
 }
 
+@include basic-typography(true);
+
+#page a, footer div a{
+  @include basic-link(lighten($text-color, 20%), darken($text-color, 10%), lighten($text-color, 30%), "underline");
+}
+
 header[role= banner] {
   background: $headerBGColor;
   .container{
@@ -65,10 +78,6 @@ header[role= banner] {
 
 body>footer {
   background: $footerBGColor;
-  color: #999;
-  .first a{
-    color:#fff;
-  }
 }
 
 #page {
@@ -92,7 +101,7 @@ nav {
     background: $buttonBGColor;
     color: $buttonColor;
     text-decoration: none;
-    padding: 6px;
+    padding: 12px 12px 3px 12px;
     &.active, &:hover {
       background: $buttonBGColorActive;
       color: $buttonColorActive; 
