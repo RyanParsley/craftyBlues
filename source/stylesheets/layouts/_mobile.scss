@@ -1,9 +1,15 @@
 @mixin mobile {
+  $column-count: 3;
+  $max-width: 400px;
+  $column-width: (get-percent($max-width) / $column-count) - ($gutter-offset) ;
   #{$container} {
     @include grid(3);
+    @include clearfix;
+
   }
+
   [role=main] {
-    @include column(3, last);
+    @include column(3);
   }
   aside {
     @include column(3, last);
@@ -12,6 +18,9 @@
     display: inline-block;
     @include column(3, last);
     text-decoration: none;
+  }
+  footer{
+    padding-top:1em;
   }
 }
 @media only screen and (max-width: 479px) {

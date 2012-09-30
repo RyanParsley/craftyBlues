@@ -1,10 +1,17 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  $column-count: 5;
+  $max-width: 740px;
+  $column-width: (get-percent($max-width) / $column-count) - ($gutter-offset) ;
+
   #{$container} {
     @include grid(5);
+    @include clearfix;
+
   }
 
   [role=main] {
-    @include column(5, last);
+    @include column(5);
+    @include last();
   }
 
   .CTA {
@@ -12,6 +19,9 @@
     @include column(2, last);
     float: right;
     text-decoration: none;
+  }
+ footer{
+    padding-top:1em;
   }
 
   aside {
