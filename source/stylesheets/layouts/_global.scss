@@ -2,7 +2,6 @@
   margin: 0 auto;
   padding: 0px $line-height; 
 }
-
 $font-family: verdana, sans-serif !default;
 #Logo{
   padding-top:.5em;
@@ -11,6 +10,11 @@ $font-family: verdana, sans-serif !default;
   line-height:2;
   color:#fff;
   text-decoration:none;
+  @include text-shadow(1px 1px 2px #666);
+  &:hover{
+    @include text-shadow(none);
+    color: darken($footerBGColor, 20%);
+  }
 }
 img, embed, object, video{
   max-width:100%;
@@ -72,18 +76,22 @@ body {
 
 header[role= banner] {
   background: $headerBGColor;
+  @include background-image(linear-gradient(top, darken($headerBGColor, 12%), $headerBGColor 24px));
+  border-bottom:solid 1px darken($headerBGColor, 10%);
   .container{
    }
 }
 
 body>footer {
   background: $footerBGColor;
+  margin-bottom:2em;
 }
 
 #page {
-  padding-top: $line-height;
-  padding-bottom: $line-height;
+  padding-top: ($line-height * 1.5)px;
+  padding-bottom: ($line-height * 1.5)px;
   @include padding-leader(1);
+  @include padding-trailer(1);
 }
 
 [role=main] {
@@ -91,7 +99,6 @@ body>footer {
 }
 
 nav {
-  background: $footerBGColor;
   ul {
     list-style: none; }
   li {
@@ -101,7 +108,8 @@ nav {
     background: $buttonBGColor;
     color: $buttonColor;
     text-decoration: none;
-    padding: 12px 12px 3px 12px;
+    padding: 6px 18px 1px 18px;
+    @include border-radius(21px);
     &.active, &:hover {
       background: $buttonBGColorActive;
       color: $buttonColorActive; 

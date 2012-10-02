@@ -19,13 +19,28 @@
     @include column(3, last);
     float: right;
     text-decoration: none;
-  } 
-  footer{
-    padding-top:1em;
   }
-
+  body>footer{
+    padding-top:2em;
+    ul{
+      text-align:center;
+    }
+  }
   aside {
     @include column(3, last);
     float: left;
   }
+  .first {
+    @include column(3, first);
+    float: left; 
+  }
+  .second {
+    @include column(2);
+    float: left; 
+  }
+  .third {
+    @include column(3, last);
+    float: left; 
+  }
+
 }

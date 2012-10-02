@@ -88,6 +88,24 @@
       float:left;
     }
   }
+  body>footer{
+    ul{
+      text-align:center;
+    }
+  }
+  .menu.recent{
+    li{
+      margin-bottom:.5em;
+    }
+    a{
+      display:block;
+    }
+    span{
+      display:block;
+      font-size:.8em;
+      text-align:right;
+    }
+  }
   .first {
     @include column(3, first);
     @include append-column(1);

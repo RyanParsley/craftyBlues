@@ -1,15 +1,14 @@
 @mixin mobile {
   $column-count: 3;
-  $max-width: 400px;
+  $max-width: 320px;
+  $gutter-width:  get-percent(4px);
   $column-width: (get-percent($max-width) / $column-count) - ($gutter-offset) ;
   #{$container} {
     @include grid(3);
     @include clearfix;
-
   }
-
   [role=main] {
-    @include column(3);
+    @include column(3, first);
   }
   aside {
     @include column(3, last);
@@ -19,8 +18,26 @@
     @include column(3, last);
     text-decoration: none;
   }
+  #page{
+    margin-bottom:1.5em;
+  }
   footer{
-    padding-top:1em;
+    padding-top:.5em;
+    .secondary {
+      margin-top:2em;
+      ul{
+        margin:0 auto;
+        padding:0;
+        li{
+          margin:.25em 0;
+          padding:0;
+          display:block;
+          a{
+            display:block;
+          }
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 479px) {

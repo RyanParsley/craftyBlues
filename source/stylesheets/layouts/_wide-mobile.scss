@@ -1,6 +1,9 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   $column-count: 5;
   $max-width: 740px;
+  $gutter-width: get-percent(4px);
+  $gutter-offset: $gutter-width * ( $column-count - 1) / $column-count;
+
   $column-width: (get-percent($max-width) / $column-count) - ($gutter-offset) ;
 
   #{$container} {
@@ -20,9 +23,26 @@
     float: right;
     text-decoration: none;
   }
- footer{
-    padding-top:1em;
+  footer{
+    padding-top:.5em;
+    .secondary {
+      margin-top:2em;
+      margin-bottom:2em;
+      ul{
+        margin:0 auto;
+        padding:0;
+        li{
+          margin:.25em 0;
+          padding:0;
+          display:block;
+          a{
+            display:block;
+          }
+        }
+      }
+    }
   }
+
 
   aside {
     @include column(5, last);

@@ -2,20 +2,20 @@
   .container
     .first
       %h2 Recent Articles
-      %ol.menu
+      %ol.menu.recent
         - blog.articles[0...10].each do |article|
           %li
             = link_to article.title, article.url
             %span= article.date.strftime('%b %e')
     .second
       %h2 Topics
-      %ol.menu
+      %ol.menu.topics
         - blog.tags.each do |tag, articles|
           %li 
             = link_to "#{tag} (#{articles.size})", tag_path(tag) 
     .third
       %h2 Featured
-      %ol.menu
+      %ol.menu.featured
         %li= link_to "Why does this site exist", "/blog/2012/09/15/WhyDoesThisExist/"
   %nav.secondary
     = partial "layouts/partials/main_nav"

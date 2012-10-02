@@ -7,16 +7,16 @@ $primaryColor: rgb(60, 60, 60);
 $secondaryBGColor: #CCEFFC;
 $secondaryColor: #999999;
 
-$footerBGColor: #6d6e71;
+$footerBGColor: #ddd;
 
 
-$buttonBGColor: lighten($footerBGColor, 10%);
-$buttonColor: lighten($buttonBGColor, 20%);
+$buttonBGColor: darken($footerBGColor, 10%);
+$buttonColor: darken($buttonBGColor, 20%);
 
-$buttonBGColorActive: lighten($footerBGColor, 20%);
+$buttonBGColorActive: darken($footerBGColor, 20%);
 $buttonColorActive: #cccccc;
 
-$header-color: lighten($footerBGColor, 30%);
+$header-color: darken($footerBGColor, 30%);
 $headerBGColor: $footerBGColor;
 
 
