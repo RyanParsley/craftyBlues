@@ -69,7 +69,18 @@ body {
 }
 
 @include basic-typography(true);
+pre, code{
+  font-family: $inconsolata;
+  font-size: .9em;
+}
+pre{
+  margin-top:1em;
+  margin-bottom:2em;
+  line-height: 1.2;
+  padding:1em;
+  background:#efefef;
 
+}
 #page a, footer div a{
   @include basic-link(lighten($text-color, 20%), darken($text-color, 10%), lighten($text-color, 30%), "underline");
 }
