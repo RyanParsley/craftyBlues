@@ -1,5 +1,5 @@
 ---
-title: 3 String - I III V Tuning Fretboard
+title: 3 String - I III V 
 date: 2012-09-19 23:28 -04:00
 tags: download
 dl: /downloads/3String135TuningFretboardWithScaleNotes.png

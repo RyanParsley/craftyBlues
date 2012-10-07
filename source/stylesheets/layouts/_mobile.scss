@@ -7,6 +7,20 @@
     @include grid(3);
     @include clearfix;
   }
+  pre{
+    overflow: scroll;
+    font-size:.6em;
+  }
+  header nav {
+    font-size:.9em;
+    margin-left:0;
+    ul{
+      margin-left:0;
+      padding-left:0;
+      text-align:center;
+      margin-top:0;
+    }
+  }
   [role=main] {
     @include column(3, first);
   }

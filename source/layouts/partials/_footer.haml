@@ -3,7 +3,7 @@
     .first
       %h2 Recent Articles
       %ol.menu.recent
-        - blog.articles[0...10].each do |article|
+        - blog.articles[0...5].each do |article|
           %li
             = link_to article.title, article.url
             %span= article.date.strftime('%b %e')
@@ -16,6 +16,21 @@
     .third
       %h2 Featured
       %ol.menu.featured
-        %li= link_to "Why does this site exist", "/blog/2012/09/15/WhyDoesThisExist/"
+        %li
+          = link_to "Little Drummer Boy", "/blog/2012/10/07/littledrummerboy/"
+          %span Oct 7
+        %li
+          = link_to "Nobody’s Fault But Mine", "/blog/2012/09/24/nobodysfaultbutminetabs/"
+          %span Sept 24
+        %li
+          = link_to "Blitzkrieg Bop", "/blog/2012/10/04/blitzkriegbop/"
+          %span Oct 4
+        %li
+          = link_to "3 String - I III V", "/blog/2012/09/19/3string135tuning/"
+          %span Sep 19
+        %li
+          = link_to "Numeral Cheat Sheet", "/blog/2012/10/07/numeralCheatSheet/"
+          %span Oct 7 
+
   %nav.secondary
     = partial "layouts/partials/main_nav"
