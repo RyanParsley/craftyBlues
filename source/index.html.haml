@@ -1,10 +1,17 @@
 ---
 pageable: true
-per_page: 10
+per_page: 5
 layout: blog
 title: Blog posts
 selected: blog
 ---
+
+- page_articles.each_with_index do |article, i|
+  = link_to article do 
+    %h2
+      =article.title
+      %span= article.date.strftime('%b %e')
+  = article.summary
 - if paginate
   %p 
     Page 
@@ -14,13 +21,6 @@ selected: blog
   - if prev_page
     %p= link_to 'Previous page', prev_page
 
-- page_articles.each_with_index do |article, i|
-  = link_to article do 
-    %h2
-      =article.title
-      %span= article.date.strftime('%b %e')
-  = article.summary
-
 - if paginate
-  = if next_page
+  - if next_page
     %p= link_to 'Next page', next_page

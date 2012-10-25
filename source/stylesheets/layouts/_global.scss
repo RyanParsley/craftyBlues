@@ -3,10 +3,14 @@
   padding: 0px $line-height; 
 }
 $font-family: verdana, sans-serif !default;
+h1,h2,h3,h4,h5{
+  font-family:'Sorts Mill Goudy', serif;
+}
 #Logo{
   padding-top:.5em;
   display:block;
   font-size:2em;
+  font-family:'Sorts Mill Goudy', serif;
   line-height:2;
   color:#fff;
   text-decoration:none;
@@ -162,19 +166,19 @@ ul.gallery{
 .menu{
   margin-bottom:2em;
 }
-.menu.recent, .menu.featured{
-    li{
-      margin-bottom:.5em;
-    }
-    a{
-      display:block;
-    }
-    span{
-      display:block;
-      font-size:.8em;
-      text-align:right;
-    }
+.menu.recent, .menu.featured, .menu.topics{
+  li{
+    margin-bottom:.5em;
   }
+  a{
+    display:block;
+  }
+  span{
+    display:block;
+    font-size:.8em;
+    text-align:right;
+  }
+}
 
 // Selection colors (easy to forget)
 @include selection-color(unquote("rgb(255,255,158)"));
