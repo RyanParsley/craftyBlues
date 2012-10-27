@@ -182,3 +182,40 @@ ul.gallery{
 
 // Selection colors (easy to forget)
 @include selection-color(unquote("rgb(255,255,158)"));
+
+.readMore{
+  float:right;
+}
+article{
+  clear:both;
+  padding-bottom:48px;
+  margin-bottom:24px;
+}
+.pagers{
+  border-top:solid 1px #ccc;
+  padding-top:24px;
+  clear:both;
+}
+.next{
+  float:right;
+  text-align:right;
+  display:inline-block;
+}
+.previous{
+  display:inline-block;
+}
+.pageCount{
+  text-align:center;
+  margin-top:24px;
+}
+a h2{
+  margin-left:-12px;
+  margin-right:-12px;
+  padding-left:12px;
+  padding-right:12px;
+  padding-top:12px;
+  paddding-bottom:6px;
+  &:hover{
+    background:#efefef;
+  }
+}
