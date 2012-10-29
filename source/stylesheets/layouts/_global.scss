@@ -123,8 +123,8 @@ nav {
     background: $buttonBGColor;
     color: $buttonColor;
     text-decoration: none;
-    padding: 6px 18px 1px 18px;
-    @include border-radius(21px);
+    padding: .5em 1em .2em 1em;
+    @include border-radius(2em);
     &.active, &:hover {
       background: $buttonBGColorActive;
       color: $buttonColorActive; 
