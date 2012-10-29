@@ -117,13 +117,15 @@ nav {
   ul {
     list-style: none; }
   li {
-    display: inline-block; }
+    display: inline-block; 
+  }
   a {
-    display: block;
+    display: inline-block;
     background: $buttonBGColor;
     color: $buttonColor;
     text-decoration: none;
-    padding: .5em 1em .2em 1em;
+    padding: .7em 1em .3em 1em;
+    line-height:1.5;
     @include border-radius(2em);
     &.active, &:hover {
       background: $buttonBGColorActive;
