@@ -23,7 +23,7 @@
     = partial "layouts/partials/header"
     #page.container
       %h1
-        Articles tagged '#{tagname}'
+        Articles tagged &lsquo;#{tagname}&rsquo;
       %section{:role => "main"}
         = yield
         - if current_page.data.dl
