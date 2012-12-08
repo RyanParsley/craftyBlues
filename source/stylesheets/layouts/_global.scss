@@ -157,6 +157,9 @@ ul.gallery{
   list-style:none;
   margin:0;
   padding:0;
+  a{
+    border-bottom:none !important;
+  }
   li{
     @include column(3.3);
     float:left;
