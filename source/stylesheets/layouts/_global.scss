@@ -136,8 +136,9 @@ nav {
     border:solid 2px darken($buttonBGColor, 10%);
     text-decoration:none;
     display:inline-block;
-    padding-top:6px;
-    line-height:1.5;
+    padding-top:9px;
+    padding-bottom:3px;
+    line-height:1;
     color:$buttonColor;
     @include text-shadow(1px 1px 1px rgba(255,255,255,.5)); 
     font-size:18px;
