@@ -4,25 +4,26 @@
 $primaryBGColor: white;
 $primaryColor: rgb(60, 60, 60);
 
-$secondaryBGColor: #CCEFFC;
+$secondaryBGColor: #7ec3dc;
 $secondaryColor: #999999;
 
-$footerBGColor: #ddd;
+$footerBGColor: #eae8ff;
 
 
-$buttonBGColor: darken($footerBGColor, 10%);
-$buttonColor: darken($buttonBGColor, 20%);
+$buttonBGColor: #507ba9;
+$buttonColor: lighten($buttonBGColor, 30%);
 
-$buttonBGColorActive: darken($footerBGColor, 20%);
-$buttonColorActive: #cccccc;
+$buttonBGColorActive: #19395d;
+$buttonColorActive: lighten($buttonBGColorActive, 30%);
 
 $header-color: darken($footerBGColor, 30%);
-$headerBGColor: $footerBGColor;
+$headerBGColor: #eae8ff;
 
 
 // Basic Typography Settings
-$base-font-family: $josefin;
-$header-font-family: $goudy;
+$base-font-family:$josefin ;
+$header-font-family:$goudy ; 
+
 $indented-paragraphs: true;
 $base-font-size: 21px;
 $base-line-height: 32px;

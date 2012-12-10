@@ -18,6 +18,8 @@
       @include column(6,last);
       float:left;
       text-align:right;
+      padding-bottom:0;
+      margin-bottom:0;
     }
   }
   nav.secondary ul{

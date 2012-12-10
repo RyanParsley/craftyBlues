@@ -10,7 +10,7 @@
 }
 
 @mixin basic-typography($indented: $indented-paragraphs) {
-  @include headings;
+  @include headings($color: #a97c50);
   @if $indented {
     @include indented-paragraphs;
   } @else {

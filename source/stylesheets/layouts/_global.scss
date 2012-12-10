@@ -4,22 +4,27 @@
 }
 $font-family: verdana, sans-serif !default;
 h1,h2,h3,h4,h5{
-  font-family:'Sorts Mill Goudy', serif;
+
+  font-family: $goudy;
+  color:#a97c50;
 }
 #Logo{
   padding-top:.5em;
   display:block;
   font-size:2em;
-  font-family:'Sorts Mill Goudy', serif;
+  font-family:$goudy;
   line-height:2;
-  color:#fff;
+  color:#6d6e71;
   text-decoration:none;
-  @include text-shadow(1px 1px 2px #666);
+  @include text-shadow(1px 1px 0px #fff);
+  padding-top:0;
+  padding-bottom:0;
   &:hover{
     @include text-shadow(none);
-    color: darken($footerBGColor, 20%);
+    color:#a97c50;
   }
 }
+
 img, embed, object, video{
   max-width:100%;
 }
@@ -91,7 +96,7 @@ pre{
 
 header[role= banner] {
   background: $headerBGColor;
-  @include background-image(linear-gradient(top, darken($headerBGColor, 12%), $headerBGColor 48px));
+  @include background-image(linear-gradient(top, darken($headerBGColor,9%), $headerBGColor 72px));
   border-bottom:solid 1px darken($headerBGColor, 10%);
   .container{
    }
