@@ -6,6 +6,8 @@ tags: tabs
 
 I found the chord progression of Blitzkrieg Bop on [Ultimate Guitar](http://tabs.ultimate-guitar.com/r/ramones/blitzkreig_bop_crd.htm) and transcribed it for open G tuning.
 
+READMORE
+
 ```
 Open                            Bar 5    Bar 7
 They're formin' in a straight line

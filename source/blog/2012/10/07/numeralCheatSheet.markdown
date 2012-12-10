@@ -5,6 +5,8 @@ tags: theory
 I keep transposing notes to numerals so I made this little cheat
 sheet to speed up the process.
 
+READMORE
+
 ```
  0    1    2    3    4    5    6    7    8    9    10   11 
 ------------------------------------------------------------

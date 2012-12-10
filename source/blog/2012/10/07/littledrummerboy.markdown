@@ -3,6 +3,11 @@ title: Little Drummer Boy
 date: 2012-10-07 01:23 -04:00
 tags: tabs, theory
 ---
+A holiday favorite of mine all transcribed and ready to play on my 3
+string.
+
+READMORE
+
 ## Notes in the key of C
 ```
 C                      F          C
