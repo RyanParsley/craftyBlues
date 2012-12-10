@@ -96,7 +96,9 @@ pre{
 
 header[role= banner] {
   background: $headerBGColor;
-  @include background-image(linear-gradient(top, darken($headerBGColor,9%), $headerBGColor 72px));
+  @include background-image(linear-gradient(top,
+  darken($headerBGColor,9%), $headerBGColor 16px));
+  border-top:solid 1px darken($headerBGColor,20%);
   border-bottom:solid 1px darken($headerBGColor, 10%);
   .container{
    }
@@ -125,16 +127,29 @@ nav {
     display: inline-block; 
   }
   a {
-    display: inline-block;
-    background: $buttonBGColor;
-    color: $buttonColor;
-    text-decoration: none;
-    padding: .7em 1em .3em 1em;
+    background:$buttonBGColor;
+    background:$buttonBGColor url(../images/noise.png);
+    @include box-shadow(0 2px 6px rgba(0,0,0,0.2),
+                        inset 0 1px rgba(255,255,255,0.2),
+                        inset 0 10px 20px rgba(255,255,255,0.1),
+                        inset 0 -15px 30px rgba(0,0,0,0.3));
+    border:solid 2px darken($buttonBGColor, 10%);
+    text-decoration:none;
+    display:inline-block;
+    padding-top:6px;
     line-height:1.5;
-    @include border-radius(2em);
-    &.active, &:hover {
-      background: $buttonBGColorActive;
-      color: $buttonColorActive; 
+    color:$buttonColor;
+    @include text-shadow(1px 1px 1px rgba(255,255,255,.5)); 
+    font-size:18px;
+    padding-left:24px;
+    padding-right:24px;
+    @include border-radius(6px);
+    &:hover, &.active, &.active-trail{
+      color:lighten($buttonColor, 20%);
+      background:lighten($buttonBGColor, 20%);
+      @include box-shadow(none);
+      @include text-shadow(none);
+      border:solid 2px lighten($buttonBGColor, 20%);  
     }
   }
 }
