@@ -253,3 +253,14 @@ a h2{
     background:#efefef;
   }
 }
+.sponsor{
+  border:1px solid #999;
+  @include border-radius(3px);
+  a{
+    display:block;
+    text-align:center;
+    margin-bottom:0;
+    margin-top:24px;
+  }
+
+}

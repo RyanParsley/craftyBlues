@@ -56,6 +56,8 @@
 
   aside {
     @include column(5, last);
+    clear:both;
+    margin-top:48px;
   }
 
 }

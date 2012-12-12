@@ -10,8 +10,8 @@ selected: blog
   %article
     = link_to article do 
       %h2
-        =article.title
         %span= article.date.strftime('%b %e')
+        =article.title
     = article.summary
     =link_to 'Read the whole post', article, :class => "readMore"
 - if paginate && (prev_page || next_page)

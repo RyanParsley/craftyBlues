@@ -7,6 +7,9 @@
     @include grid(3);
     @include clearfix;
   }
+  h2{
+    font-size:1em;
+  }
   pre{
     overflow: scroll;
     font-size:.6em;
@@ -26,7 +29,11 @@
   }
   aside {
     @include column(3, last);
+    clear:both;
+    margin-top:48px;
   }
+
+
   .CTA {
     display: inline-block;
     @include column(3, last);
