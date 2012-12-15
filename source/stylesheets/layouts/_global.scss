@@ -27,6 +27,7 @@ h2 span{
   @include text-shadow(1px 1px 0px #fff);
   padding-top:0;
   padding-bottom:0;
+  border:none;
   &:hover{
     @include text-shadow(none);
     color:#a97c50;
@@ -98,7 +99,8 @@ pre{
   background:#efefef;
 
 }
-#page a, footer div a{
+a{
+
   @include basic-link(lighten($text-color, 20%), darken($text-color, 10%), lighten($text-color, 30%), "underline");
 }
 

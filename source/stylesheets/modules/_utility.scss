@@ -15,11 +15,9 @@
 }
 
 @mixin basic-link($color: $link-color, $visited: $color, $hover: $color, $decoration: "underline") {
-  &:link { 
     color: $color;
     @if $decoration == "underline" { text-decoration: none; border-bottom: solid .1em $color;}
     @if $decoration == "plain"     { text-decoration: none; }
-  }
   &:visited {
     color: $visited;
   }

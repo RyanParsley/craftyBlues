@@ -7,6 +7,29 @@
     @include grid(8);
     @include clearfix;
   }
+  #Logo{
+    @include column(3.5, first);
+    float:left;
+    padding-bottom:0;
+    margin-bottom:0;
+    img{
+      float:left;
+      margin-right:24px;
+    }
+  }
+   header[role= banner] {
+    nav {
+      @include column(4.5,last);
+      float:left;
+      text-align:right;
+      padding-bottom:0;
+      margin-bottom:0;
+      ul{
+        margin:0;
+      }
+    }
+  }
+
   #page {
     @include clearfix;
   }
