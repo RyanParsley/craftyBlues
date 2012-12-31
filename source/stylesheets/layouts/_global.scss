@@ -65,6 +65,7 @@ html {
 
 body {
   background: $primaryBGColor;
+  background: $primaryBGColor url(../images/light_wool.png);
   color: $primaryColor;
   @include base-font;
   // Stops Mobile Safari from auto-adjusting font-sizes
@@ -128,7 +129,6 @@ body>footer {
 }
 
 [role=main] {
-  background: $primaryBGColor;
 }
 
 nav {
