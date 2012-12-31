@@ -107,8 +107,8 @@ a{
 
 header[role= banner] {
   background: $headerBGColor;
-  @include background-image(url(../images/noise.png), linear-gradient(top,
-  darken($headerBGColor,7%), $headerBGColor 18px));
+  @include background-image( linear-gradient(top,
+  rgba(darken($headerBGColor,40%), .2), rgba($headerBGColor, 0) 36px), url(../images/blueRicepaper.png));
   border-top:solid 1px darken($headerBGColor,20%);
   border-bottom:solid 1px darken($headerBGColor, 10%);
   .container{
@@ -116,9 +116,9 @@ header[role= banner] {
 }
 
 body>footer {
-  background: $footerBGColor url(../images/noise.png);
+  background: $footerBGColor url(../images/blueRicepaper.png);
   border-top:solid 1px darken($headerBGColor, 10%);
-  margin-bottom:2em;
+  padding-bottom:2em;
 }
 
 #page {
