@@ -38,6 +38,11 @@ end
 page "/feed.xml", :layout => false
 
 ###
+# Use LiveReload
+###
+activate :livereload
+
+###
 # Stuff I wrote
 ###
 require "./lib/lil_helpers"
