@@ -7,6 +7,11 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.link "href" => "http://craftyblues.com/feed.xml", "rel" => "self"
   xml.updated blog.articles.first.date.to_time.iso8601
   xml.author { xml.name "Ryan Parsley" }
+  xml.image do
+    xml.url "http://craftyblues.com/images/logo.png"
+    xml.link "http://craftyblues.com"
+    xml.title "CraftyBlues"
+  end
 
   blog.articles[0..5].each do |article|
     xml.entry do
