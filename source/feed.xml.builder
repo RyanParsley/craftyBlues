@@ -12,6 +12,8 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
     xml.link "http://craftyblues.com"
     xml.title "CraftyBlues"
   end
+  xml.icon  "http://craftyblues.com/images/favicon.ico"
+  xml.logo  "http://craftyblues.com/images/logo.png"
 
   blog.articles[0..5].each do |article|
     xml.entry do
