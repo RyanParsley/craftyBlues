@@ -1,7 +1,7 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.title "Crafty Blues"
-  xml.subtitle "One man’s trash"
+  xml.subtitle "One man's trash"
   xml.id "http://craftyblues.com/"
   xml.link "href" => "http://craftyblues.com/"
   xml.link "href" => "http://craftyblues.com/feed.xml", "rel" => "self"
