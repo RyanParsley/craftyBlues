@@ -45,3 +45,26 @@
     border:solid 2px $background-color-hover;
   }
 }
+@mixin subtle-button($color: #eee){
+  background:$color;
+  @include box-shadow(  1px 1px 3px rgba(0,0,0,0.1),
+                        inset 0 1px #fff,
+                        inset 0 1em 1em rgba(lighten($color, 80%), .4),
+                        inset 0 -1em 2em rgba(darken($color, 20%), .1));
+  border:solid 1px darken($color, 5%);
+  text-decoration:none;
+  color: #666;
+  text-shadow:1px 1px 0px #fff;
+  @include border-radius(3px);
+  line-height:1.5;
+  font-size:.8em;
+  padding:.5em 1em .25em 1em;
+  &:hover, &.active, &.active-trail{
+    color: darken($color, 40%);
+    background: darken($color, 5%);
+    @include box-shadow(none);
+    text-shadow:none;
+    border-color:darken($color, 10%);
+  }
+}
+
