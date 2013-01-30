@@ -16,15 +16,15 @@ Time.zone = "EST"
 
 activate :blog do |blog|
   #blog.prefix = "blog"
-  blog.permalink = "blog/:year/:month/:day/:title"
-  blog.sources = "blog/:year/:month/:day/:title"
-  blog.taglink = "blog/tags/:tag.html"
+  blog.permalink = "article/:year/:month/:day/:title"
+  blog.sources = "article/:year/:month/:day/:title"
+  blog.taglink = "article/tags/:tag.html"
   blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
-  blog.year_link = "blog/:year.html"
-  blog.month_link = "blog/:year/:month.html"
-  blog.day_link = "blog/:year/:month/:day.html"
+  blog.year_link = "article/:year.html"
+  blog.month_link = "article/:year/:month.html"
+  blog.day_link = "article/:year/:month/:day.html"
   # blog.default_extension = ".markdown"
 
   blog.tag_template = "tag.html"

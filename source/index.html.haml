@@ -2,7 +2,7 @@
 pageable: true
 per_page: 5
 layout: blog
-title: Blog posts
+title: Articles
 selected: blog
 ---
 
@@ -10,8 +10,8 @@ selected: blog
   %article
     = link_to article do 
       %h2
-        %span= article.date.strftime('%b %e')
         =article.title
+    %span.date= article.date.strftime('%b %e')
     = article.summary
     =link_to 'Read the whole post', article, :class => "readMore"
 - if paginate && (prev_page || next_page)
