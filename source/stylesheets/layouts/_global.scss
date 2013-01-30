@@ -90,18 +90,18 @@ body {
 @include basic-typography(true);
 pre, code{
   font-family: $inconsolata;
-  font-size: .9em;
+  font-size: .85em;
 }
 pre{
   margin-top:1em;
   margin-bottom:2em;
   line-height: 1.2;
   padding:1em;
-  background:#efefef;
-
+  border-radius:3px;
+  background:#f4f4f4;
+  border:solid 1px #e9e9e9;
 }
 a{
-
   @include basic-link(lighten($text-color, 20%), darken($text-color, 10%), lighten($text-color, 30%), "underline");
 }
 
@@ -111,8 +111,6 @@ header[role= banner] {
   rgba(darken($headerBGColor,40%), .2), rgba($headerBGColor, 0) 36px), url(../images/blueRicepaper.png));
   border-top:solid 1px darken($headerBGColor,20%);
   border-bottom:solid 1px darken($headerBGColor, 10%);
-  .container{
-   }
 }
 
 body>footer {
@@ -229,6 +227,7 @@ ul.gallery{
 article{
   clear:both;
   margin-bottom:24px;
+  @include clearfix();
   h2{
     margin-bottom:0;
   }
