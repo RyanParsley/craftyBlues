@@ -1,3 +1,6 @@
+@import "modules/all";
+@import "theme/theme";
+
 #{$container} {
   margin: 0 auto;
   padding: 0px $line-height; 
@@ -5,7 +8,6 @@
 $font-family: verdana, sans-serif !default;
 h1,h2,h3,h4,h5{
 
-  font-family: $goudy;
   color:#a97c50;
 }
 h2 span{
@@ -20,7 +22,6 @@ h2 span{
   padding-top:.5em;
   display:block;
   font-size:2em;
-  font-family:$goudy;
   line-height:2;
   color:#6d6e71;
   text-decoration:none;

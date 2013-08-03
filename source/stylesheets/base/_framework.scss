@@ -2,6 +2,7 @@ $grid-element: unquote("body") !default;
 $column-width: 88px !default;
 $gutter-width: 4px !default;
 $column-padding: 10px !default;
+$line-height: 1.5em;
 
 @mixin grid($columns) {
   width: (68px * $columns) + (24px * ($columns - 1));
