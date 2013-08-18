@@ -53,11 +53,9 @@ set :md, :layout_engine => :haml
 activate :directory_indexes
 
 page "test.html", :layout => "layouts/test"
-
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
-               :autolink => true, 
-               :smartypants => true
+               :disable_indented_code_blocks => true
 ### 
 # Compass
 ###

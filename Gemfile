@@ -10,5 +10,5 @@ gem "builder", "~> 3.2.2"
 
 gem "rake"
 gem "capistrano"
-gem "redcarpet"
 gem "nokogiri"
+gem "redcarpet"
