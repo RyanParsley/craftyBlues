@@ -24,7 +24,7 @@
     #page.container
       %h1= title
       %section{:role => "main"}
-        = yield
+        ~ yield
         - if current_page.data.dl
           = link_to 'Download', current_page.data.dl, :class=> "dl"
       = partial "layouts/partials/aside"
