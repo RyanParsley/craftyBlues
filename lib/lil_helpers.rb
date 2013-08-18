@@ -1,8 +1,8 @@
 module LilHelpers
   def page_title
     page_title = "Crafty Blues: "
-    if data.page.title
-      page_title << data.page.title
+    if current_resource.data.title
+      page_title << current_resource.data.title
     else
       page_title << "handmade music"
     end
@@ -10,8 +10,8 @@ module LilHelpers
   end
 
   def title
-    if data.page.title
-      title = data.page.title
+    if current_resource.data.title
+      title = current_resource.data.title
     else
       title = "Missing a title!"
     end
@@ -29,16 +29,16 @@ module LilHelpers
   end
 
   def active?(part)
-     "active" if (data.page.selected == part) or Regexp.new(part).match(request.path)
+     "active" if (current_resource.data.selected == part) or Regexp.new(part).match(request.path)
   end
 
   def aside?
-    if data.page.aside
-      partial "layouts/partials/#{current_page.data.aside}"
+    if current_resource.data.aside
+      partial "layouts/partials/#{current_resource.data.aside}"
     end
   end
   def asideClass?
-    if data.page.aside
+    if current_resource.data.aside
       asideClass = " hasAside"
     else
       asideClass = " noAside"
