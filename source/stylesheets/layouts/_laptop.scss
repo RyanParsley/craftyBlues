@@ -42,7 +42,7 @@
     @include append-column(1);
     float: left;
   }
-  aside {
+  aside, .subscribe {
     @include column(3, last);
     float: left;
   }

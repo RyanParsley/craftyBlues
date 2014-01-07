@@ -46,3 +46,12 @@ a h2{
 body{
 
 }
+.subscribe{
+  display:block;
+  border-bottom:none;
+  background:#ccc;
+  @include subtle-button();
+  &:hover{
+    border-bottom:none;
+  }
+}
