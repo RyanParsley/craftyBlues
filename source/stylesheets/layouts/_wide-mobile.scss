@@ -11,8 +11,12 @@
   #Logo{
     @include column(5,last);
      padding-top:9px;
-    img{float:left;margin-right:12px;}
-
+    img{
+      width:72px;
+      height:auto;
+      float:left;
+      margin-right:12px;
+    }
   }
   header nav {
     @include column(5,last);

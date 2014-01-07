@@ -31,7 +31,12 @@
   #Logo{
     @include column(3,last);
     padding-top:9px;
-    img{float:left;margin-right:12px;}
+    img{
+      width:72px;
+      height:auto;
+      float:left;
+      margin-right:12px;
+    }
   }
   [role=main] {
     @include column(3, first);
