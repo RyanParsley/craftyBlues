@@ -59,7 +59,8 @@
   }
   aside {
     @include column(3, last);
-    float: left;
+    clear:left;
+    float: none;
   }
   .first {
     @include column(3, first);
