@@ -12,3 +12,8 @@ gem "rake"
 gem "capistrano"
 gem "nokogiri"
 gem "redcarpet"
+gem 'rack-contrib'
+ 
+group :development do
+  gem 'unicorn'
+end
